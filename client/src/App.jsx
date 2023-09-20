@@ -6,7 +6,7 @@ function App() {
 
   const getData = async () => {
     try {
-      const response = await fetch('http://localhost:3000/');
+      const response = await fetch('http://localhost:3000/users');
       const data = await response.json();
       setData(data);
     } catch (error) { console.error('Error', error); }
